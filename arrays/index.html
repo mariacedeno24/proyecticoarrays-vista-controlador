@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section id="appForm">
+    <h3>Aplicación Inscripciones</h3>
+    <div>
+      <button id="appForm_btAgregarEstudiante">+Estudiante</button>
+      <button id="appForm_btReportarEstudiantes">Estudiantes</button>
+      <button id="appForm_btAgregarMateris">+Materia</button>
+      <button id="appForm_btReportarMaterias">Maerias</button>
+    </div>
+  </section>
+  <section id="estudianteForm">
+    <h3>Datos del Estudiante</h3>
+    <input type="text" id="estudianteForm_inCedula" placeholder="Cédula"></input>
+    <input type="text" id="estudianteForm_inApellido" placeholder="Apellido"></input>
+    <input type="text" id="estudianteForm_inNombre" placeholder="Nombre"></input>
+    <button id="estudianteForm_btAceptar">Aceptar</button>
+    <button id="estudianteForm_btCancelar">Cancelar</button>
+  </section>
+  <section id="materiaForm">
+    <h3>Datos de la Materia</h3>
+    <input type="text" id="materiaForm_inCodigo" placeholder="Código"></input>
+    <input type="text" id="materiaForm_inSemestre" placeholder="Semestre"></input>
+    <input type="text" id="materiaForm_inNombre" placeholder="Nombre"></input>
+    <button id="materiaForm_btAceptar">Aceptar</button>
+    <button id="materiaForm_btCancelar">Cancelar</button>
+  </section>
+  <section id="reporteEstudiantesForm">
+    <h3>Reporte de estudiantes</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Cédula</th>
+          <th>Apellido</th>
+          <th>Nombre</th>
+        </tr>
+      </thead>
+      <tbody id="reporteEstudiantesForm_tabla">
+      </tbody>
+    </table>
+    <br>
+    <button id="reporteEstudiantesForm_btVolver">Volver</button>
+  </section>
+  <section id="reportemateriasForm">
+    <h3>Reporte de materias</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Semestre</th>
+          <th>Nombre</th>
+        </tr>
+      </thead>
+      <tbody id="reporteMateriasForm_tabla">
+      </tbody>
+    </table>
+    <br>
+    <button id="reporteMateriasForm_btVolver">Volver</button>
+  </section>
+</body>
+<script type="module">
+  import Cl_principal from "./js/principal.js";
+  //new Cl_principal()
+</script>
+
+</html>
