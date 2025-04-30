@@ -1,11 +1,9 @@
-import Cl_mEstudiante from "./Cl_mEstudiante.js";
 import Cl_mEstudiantes from "./Cl_mEstudiantes.js";
 import Cl_mMaterias from "./Cl_mMaterias.js";
-export default class Cl_mSemestre extends Cl_mEstudiantes{
+export default class Cl_mSemestre{
     constructor (nombre){
-        super (nombre);
-    let materias = [Cl_mMaterias()];
-    let estudiantes = [Cl_mEstudiante()];
+        this.nombre = nombre;
+    this.materias = new Cl_mMaterias;
+    this.estudiantes =new Cl_mEstudiantes;
     }
-
 }
