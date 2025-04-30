@@ -1,13 +1,11 @@
-import Cl_mMateria from "./Cl_mMateria.js";
-
 export default class Cl_mMaterias {
 constructor (){
-    let arrays = [];
+    this.array = [];
+}
+agregar(materia){
+this.array.push(materia);
 }
 listado(){
-
-}
-agregar(){
-
+    return this.array;
 }
 }
