@@ -1,13 +1,11 @@
-import Cl_mEstudiante from "./Cl_mEstudiante";
 export default class Cl_mEstudiantes {
     constructor(){
-    let array = [];
+    this.array = [];
     }   
+    agregar(estudiante){
+        this.array.push(estudiante);
+    }
     listado(){
-
+        return this.array;
     }
-    agregar(){
-
-    }
-
 }
